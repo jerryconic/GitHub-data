@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html";>
+<meta name="keywords" content=" - HTML Report">
+<meta name="author" content="Datanamic - www.datanamic.com">
+<title>Library</title>
+<link rel="stylesheet" type="text/css" media="screen,print" href="dbautodoc.css" title="report">
+</head>
+<body bgcolor="#FFFFFF" leftmargin="20" topmargin="10" marginwidth="20" marginheight="10">
+<div class="top">
+Library
+<BR>This report has been generated with the trial version of DeZign for Databases
+</div>
+<ul id="menu">
+<li><a href="index.html">Project details</a></li>
+<li><a href="erdiagram.html">Diagrams</a></li>
+<li><a href="entl.html">Entities</a></li>
+<li><a href="attrl.html">Attributes</a></li>
+<li><a href="rell.html">Relationships</a></li>
+<li><a href="userdefinedpropertiesl.html">User defined properties</a></li>
+</ul>
+<div class="row">
+<div class="activetab">List of attributes</div>
+<div class="tab"><a href="attrd.html">Attribute details</a></div>
+</div>
+<table width=90% border=0 cellSpacing=0 cellPadding=0 class="chapter">
+<tr>
+<td class="right" valign=top>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "25%" class="fieldname">Column name</td><td valign="top" width= "25%" class="fieldname">Table</td><td valign="top" width= "12%" class="fieldname">Key</td><td valign="top" width= "25%" class="fieldname">Data type</td><td valign="top" width= "12%" class="fieldname">Not NULL</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#address">address</A></td><td valign="top" class="fielddata"><A HREF="entd.html#Member">Member</A></td><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">TEXT(100)</td><td valign="top" class="fielddata">No</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#address">address</A></td><td valign="top" class="fielddata"><A HREF="entd.html#Publisher">Publisher</A></td><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">TEXT(100)</td><td valign="top" class="fielddata">No</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#apply_date">apply_date</A></td><td valign="top" class="fielddata"><A HREF="entd.html#BookingRoom">BookingRoom</A></td><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">DATE</td><td valign="top" class="fielddata">No</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#author_id">author_id</A></td><td valign="top" class="fielddata"><A HREF="entd.html#Author">Author</A></td><td valign="top" class="fielddata">PK</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#author_id">author_id</A></td><td valign="top" class="fielddata"><A HREF="entd.html#Book_Author">Book_Author</A></td><td valign="top" class="fielddata">PK, FK</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#author_name">author_name</A></td><td valign="top" class="fielddata"><A HREF="entd.html#Author">Author</A></td><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">TEXT(20)</td><td valign="top" class="fielddata">No</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#booking_date">booking_date</A></td><td valign="top" class="fielddata"><A HREF="entd.html#BookingRoom">BookingRoom</A></td><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">DATE</td><td valign="top" class="fielddata">No</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#booking_etime">booking_etime</A></td><td valign="top" class="fielddata"><A HREF="entd.html#BookingRoom">BookingRoom</A></td><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">TIME</td><td valign="top" class="fielddata">No</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#booking_id">booking_id</A></td><td valign="top" class="fielddata"><A HREF="entd.html#BookingRoom">BookingRoom</A></td><td valign="top" class="fielddata">PK</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#booking_stime">booking_stime</A></td><td valign="top" class="fielddata"><A HREF="entd.html#BookingRoom">BookingRoom</A></td><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">TIME</td><td valign="top" class="fielddata">No</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#book_id">book_id</A></td><td valign="top" class="fielddata"><A HREF="entd.html#Book">Book</A></td><td valign="top" class="fielddata">PK</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#book_id">book_id</A></td><td valign="top" class="fielddata"><A HREF="entd.html#Book_Author">Book_Author</A></td><td valign="top" class="fielddata">PK, FK</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#book_id">book_id</A></td><td valign="top" class="fielddata"><A HREF="entd.html#BookStock">BookStock</A></td><td valign="top" class="fielddata">FK</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#book_name">book_name</A></td><td valign="top" class="fielddata"><A HREF="entd.html#Book">Book</A></td><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">TEXT(20)</td><td valign="top" class="fielddata">No</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#borrow_date">borrow_date</A></td><td valign="top" class="fielddata"><A HREF="entd.html#BorrowRecord">BorrowRecord</A></td><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">DATE</td><td valign="top" class="fielddata">No</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#borrow_id">borrow_id</A></td><td valign="top" class="fielddata"><A HREF="entd.html#BorrowRecord">BorrowRecord</A></td><td valign="top" class="fielddata">PK</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#borrow_id">borrow_id</A></td><td valign="top" class="fielddata"><A HREF="entd.html#BorrowDetail">BorrowDetail</A></td><td valign="top" class="fielddata">PK, FK</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#capacity">capacity</A></td><td valign="top" class="fielddata"><A HREF="entd.html#MeetingRoom">MeetingRoom</A></td><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">TINYINT</td><td valign="top" class="fielddata">No</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#contact_name">contact_name</A></td><td valign="top" class="fielddata"><A HREF="entd.html#Publisher">Publisher</A></td><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">TEXT(20)</td><td valign="top" class="fielddata">No</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#descriptions">descriptions</A></td><td valign="top" class="fielddata"><A HREF="entd.html#Book">Book</A></td><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">TEXT(100)</td><td valign="top" class="fielddata">No</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#email">email</A></td><td valign="top" class="fielddata"><A HREF="entd.html#Author">Author</A></td><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">No</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#email">email</A></td><td valign="top" class="fielddata"><A HREF="entd.html#Member">Member</A></td><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">TEXT(20)</td><td valign="top" class="fielddata">No</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#entrance_date">entrance_date</A></td><td valign="top" class="fielddata"><A HREF="entd.html#Member">Member</A></td><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">DATE</td><td valign="top" class="fielddata">No</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#ISBN">ISBN</A></td><td valign="top" class="fielddata"><A HREF="entd.html#Book">Book</A></td><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">TEXT(13)</td><td valign="top" class="fielddata">No</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#is_borrowed">is_borrowed</A></td><td valign="top" class="fielddata"><A HREF="entd.html#PreBorrowDetail">PreBorrowDetail</A></td><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">YESNO</td><td valign="top" class="fielddata">No</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#is_payed_anual_fee">is_payed_anual_fee</A></td><td valign="top" class="fielddata"><A HREF="entd.html#Member">Member</A></td><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">YESNO</td><td valign="top" class="fielddata">No</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#member_id">member_id</A></td><td valign="top" class="fielddata"><A HREF="entd.html#PreBorrowRecord">PreBorrowRecord</A></td><td valign="top" class="fielddata">FK</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#member_id">member_id</A></td><td valign="top" class="fielddata"><A HREF="entd.html#BorrowRecord">BorrowRecord</A></td><td valign="top" class="fielddata">FK</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#member_id">member_id</A></td><td valign="top" class="fielddata"><A HREF="entd.html#Member">Member</A></td><td valign="top" class="fielddata">PK</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#member_id">member_id</A></td><td valign="top" class="fielddata"><A HREF="entd.html#BookingRoom">BookingRoom</A></td><td valign="top" class="fielddata">FK</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#member_name">member_name</A></td><td valign="top" class="fielddata"><A HREF="entd.html#Member">Member</A></td><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">TEXT(20)</td><td valign="top" class="fielddata">No</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#phone">phone</A></td><td valign="top" class="fielddata"><A HREF="entd.html#Publisher">Publisher</A></td><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">TEXT(20)</td><td valign="top" class="fielddata">No</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#pre_borrow_date">pre_borrow_date</A></td><td valign="top" class="fielddata"><A HREF="entd.html#PreBorrowRecord">PreBorrowRecord</A></td><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">DATE</td><td valign="top" class="fielddata">No</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#pre_borrow_id">pre_borrow_id</A></td><td valign="top" class="fielddata"><A HREF="entd.html#PreBorrowDetail">PreBorrowDetail</A></td><td valign="top" class="fielddata">PK, FK</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#pre_borrow_id">pre_borrow_id</A></td><td valign="top" class="fielddata"><A HREF="entd.html#PreBorrowRecord">PreBorrowRecord</A></td><td valign="top" class="fielddata">PK</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#publisher_id">publisher_id</A></td><td valign="top" class="fielddata"><A HREF="entd.html#Publisher">Publisher</A></td><td valign="top" class="fielddata">PK</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#publisher_id">publisher_id</A></td><td valign="top" class="fielddata"><A HREF="entd.html#Book">Book</A></td><td valign="top" class="fielddata">FK</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#publisher_name">publisher_name</A></td><td valign="top" class="fielddata"><A HREF="entd.html#Publisher">Publisher</A></td><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">TEXT(20)</td><td valign="top" class="fielddata">No</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#return_date">return_date</A></td><td valign="top" class="fielddata"><A HREF="entd.html#BorrowDetail">BorrowDetail</A></td><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">DATE</td><td valign="top" class="fielddata">No</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#room_id">room_id</A></td><td valign="top" class="fielddata"><A HREF="entd.html#MeetingRoom">MeetingRoom</A></td><td valign="top" class="fielddata">PK</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#room_id">room_id</A></td><td valign="top" class="fielddata"><A HREF="entd.html#BookingRoom">BookingRoom</A></td><td valign="top" class="fielddata">FK</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#room_name">room_name</A></td><td valign="top" class="fielddata"><A HREF="entd.html#MeetingRoom">MeetingRoom</A></td><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">TEXT(20)</td><td valign="top" class="fielddata">No</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#stock_id">stock_id</A></td><td valign="top" class="fielddata"><A HREF="entd.html#BorrowDetail">BorrowDetail</A></td><td valign="top" class="fielddata">PK, FK</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#stock_id">stock_id</A></td><td valign="top" class="fielddata"><A HREF="entd.html#PreBorrowDetail">PreBorrowDetail</A></td><td valign="top" class="fielddata">PK, FK</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#stock_id">stock_id</A></td><td valign="top" class="fielddata"><A HREF="entd.html#BookStock">BookStock</A></td><td valign="top" class="fielddata">PK</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td></tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
