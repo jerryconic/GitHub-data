@@ -18,6 +18,10 @@ Inventory
 <li><a href="entl.html">Entities</a></li>
 <li><a href="attrl.html">Attributes</a></li>
 <li><a href="rell.html">Relationships</a></li>
+<li><a href="doml.html">Domains</a></li>
+<li><a href="viewl.html">Views</a></li>
+<li><a href="procl.html">Procedures</a></li>
+<li><a href="seql.html">Sequences</a></li>
 <li><a href="userdefinedpropertiesl.html">User defined properties</a></li>
 </ul>
 <div class="row">
@@ -29,19 +33,19 @@ Inventory
 <td class="right" valign=top>
 <table width="100%" border=0 class="detailstable">
 <tr><td valign="top" width= "25%" class="fieldname">Column name</td><td valign="top" width= "25%" class="fieldname">Table</td><td valign="top" width= "12%" class="fieldname">Key</td><td valign="top" width= "25%" class="fieldname">Data type</td><td valign="top" width= "12%" class="fieldname">Not NULL</td></tr>
-<tr><td valign="top" class="fielddata"><A HREF="attrd.html#address">address</A></td><td valign="top" class="fielddata"><A HREF="entd.html#Customer">Customer</A></td><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">TEXT(100)</td><td valign="top" class="fielddata">No</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#address">address</A></td><td valign="top" class="fielddata"><A HREF="entd.html#Customer">Customer</A></td><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">VARCHAR(100)</td><td valign="top" class="fielddata">No</td></tr>
 <tr><td valign="top" class="fielddata"><A HREF="attrd.html#customer_id">customer_id</A></td><td valign="top" class="fielddata"><A HREF="entd.html#SalesOrder">SalesOrder</A></td><td valign="top" class="fielddata">FK</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td></tr>
 <tr><td valign="top" class="fielddata"><A HREF="attrd.html#customer_id">customer_id</A></td><td valign="top" class="fielddata"><A HREF="entd.html#Customer">Customer</A></td><td valign="top" class="fielddata">PK</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td></tr>
-<tr><td valign="top" class="fielddata"><A HREF="attrd.html#customer_name">customer_name</A></td><td valign="top" class="fielddata"><A HREF="entd.html#Customer">Customer</A></td><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">TEXT(20)</td><td valign="top" class="fielddata">No</td></tr>
-<tr><td valign="top" class="fielddata"><A HREF="attrd.html#order_date">order_date</A></td><td valign="top" class="fielddata"><A HREF="entd.html#SalesOrder">SalesOrder</A></td><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">DATE</td><td valign="top" class="fielddata">No</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#customer_name">customer_name</A></td><td valign="top" class="fielddata"><A HREF="entd.html#Customer">Customer</A></td><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">VARCHAR(20)</td><td valign="top" class="fielddata">No</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#order_date">order_date</A></td><td valign="top" class="fielddata"><A HREF="entd.html#SalesOrder">SalesOrder</A></td><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">DATETIME</td><td valign="top" class="fielddata">No</td></tr>
 <tr><td valign="top" class="fielddata"><A HREF="attrd.html#order_id">order_id</A></td><td valign="top" class="fielddata"><A HREF="entd.html#SalesOrder">SalesOrder</A></td><td valign="top" class="fielddata">PK</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td></tr>
 <tr><td valign="top" class="fielddata"><A HREF="attrd.html#order_id">order_id</A></td><td valign="top" class="fielddata"><A HREF="entd.html#SalesOrderDetail">SalesOrderDetail</A></td><td valign="top" class="fielddata">PK, FK</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td></tr>
-<tr><td valign="top" class="fielddata"><A HREF="attrd.html#phone">phone</A></td><td valign="top" class="fielddata"><A HREF="entd.html#Customer">Customer</A></td><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">TEXT(20)</td><td valign="top" class="fielddata">No</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#phone">phone</A></td><td valign="top" class="fielddata"><A HREF="entd.html#Customer">Customer</A></td><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">VARCHAR(20)</td><td valign="top" class="fielddata">No</td></tr>
 <tr><td valign="top" class="fielddata"><A HREF="attrd.html#price">price</A></td><td valign="top" class="fielddata"><A HREF="entd.html#Product">Product</A></td><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td></tr>
 <tr><td valign="top" class="fielddata"><A HREF="attrd.html#price">price</A></td><td valign="top" class="fielddata"><A HREF="entd.html#SalesOrderDetail">SalesOrderDetail</A></td><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td></tr>
 <tr><td valign="top" class="fielddata"><A HREF="attrd.html#product_id">product_id</A></td><td valign="top" class="fielddata"><A HREF="entd.html#SalesOrderDetail">SalesOrderDetail</A></td><td valign="top" class="fielddata">PK, FK</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td></tr>
 <tr><td valign="top" class="fielddata"><A HREF="attrd.html#product_id">product_id</A></td><td valign="top" class="fielddata"><A HREF="entd.html#Product">Product</A></td><td valign="top" class="fielddata">PK</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td></tr>
-<tr><td valign="top" class="fielddata"><A HREF="attrd.html#product_name">product_name</A></td><td valign="top" class="fielddata"><A HREF="entd.html#Product">Product</A></td><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">TEXT(20)</td><td valign="top" class="fielddata">No</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#product_name">product_name</A></td><td valign="top" class="fielddata"><A HREF="entd.html#Product">Product</A></td><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">VARCHAR(20)</td><td valign="top" class="fielddata">No</td></tr>
 <tr><td valign="top" class="fielddata"><A HREF="attrd.html#quantity">quantity</A></td><td valign="top" class="fielddata"><A HREF="entd.html#SalesOrderDetail">SalesOrderDetail</A></td><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td></tr>
 </table>
 </td>

@@ -18,6 +18,10 @@ Inventory
 <li><a href="entl.html">Entities</a></li>
 <li><a href="attrl.html">Attributes</a></li>
 <li><a href="rell.html">Relationships</a></li>
+<li><a href="doml.html">Domains</a></li>
+<li><a href="viewl.html">Views</a></li>
+<li><a href="procl.html">Procedures</a></li>
+<li><a href="seql.html">Sequences</a></li>
 <li><a href="userdefinedpropertiesl.html">User defined properties</a></li>
 </ul>
 <div class="row">
@@ -31,16 +35,17 @@ Inventory
 <div class="objectname">Entity: Customer</div>
 <table width="100%" border=0 class="detailstable">
 <tr><td valign="top" width= "200" class="fieldname">Primary key constraint name</td><td valign="top" class="fielddata">PK_Customer</td></tr>
-<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata">客戶基本資料</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Table options</td><td valign="top" class="fielddata"></td></tr>
 </table>
 <BR>
 <div class="details">Attributes:</div>
 <table width="100%" border=0 class="detailstable">
 <tr><td valign="top" width= "19%" class="fieldname">Column name</td><td valign="top" width= "14%" class="fieldname">Primary key</td><td valign="top" width= "19%" class="fieldname">Data type</td><td valign="top" width= "10%" class="fieldname">Not NULL</td><td valign="top" width= "38%" class="fieldname">Comment</td></tr>
-<tr><td valign="top" class="fielddata"><A HREF="attrd.html#customer_id">customer_id</A></td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
-<tr><td valign="top" class="fielddata"><A HREF="attrd.html#customer_name">customer_name</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(20)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
-<tr><td valign="top" class="fielddata"><A HREF="attrd.html#address">address</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(100)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
-<tr><td valign="top" class="fielddata"><A HREF="attrd.html#phone">phone</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(20)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#customer_id">customer_id</A></td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">客戶編號</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#customer_name">customer_name</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">VARCHAR(20)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">客戶名稱</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#address">address</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">VARCHAR(100)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">地址</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#phone">phone</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">VARCHAR(20)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">電話</td></tr>
 </table>
 <BR>
 <div class="details">Relationships:</div>
@@ -62,15 +67,16 @@ Inventory
 <div class="objectname">Entity: Product</div>
 <table width="100%" border=0 class="detailstable">
 <tr><td valign="top" width= "200" class="fieldname">Primary key constraint name</td><td valign="top" class="fielddata">PK_Product</td></tr>
-<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata">產品基本資料</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Table options</td><td valign="top" class="fielddata"></td></tr>
 </table>
 <BR>
 <div class="details">Attributes:</div>
 <table width="100%" border=0 class="detailstable">
 <tr><td valign="top" width= "19%" class="fieldname">Column name</td><td valign="top" width= "14%" class="fieldname">Primary key</td><td valign="top" width= "19%" class="fieldname">Data type</td><td valign="top" width= "10%" class="fieldname">Not NULL</td><td valign="top" width= "38%" class="fieldname">Comment</td></tr>
-<tr><td valign="top" class="fielddata"><A HREF="attrd.html#product_id">product_id</A></td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
-<tr><td valign="top" class="fielddata"><A HREF="attrd.html#product_name">product_name</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(20)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
-<tr><td valign="top" class="fielddata"><A HREF="attrd.html#price">price</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#product_id">product_id</A></td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">產品編號</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#product_name">product_name</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">VARCHAR(20)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">產品名稱</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#price">price</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">單價</td></tr>
 </table>
 <BR>
 <div class="details">Relationships:</div>
@@ -92,15 +98,16 @@ Inventory
 <div class="objectname">Entity: SalesOrder</div>
 <table width="100%" border=0 class="detailstable">
 <tr><td valign="top" width= "200" class="fieldname">Primary key constraint name</td><td valign="top" class="fielddata">PK_SalesOrder</td></tr>
-<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata">訂單基本資料</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Table options</td><td valign="top" class="fielddata"></td></tr>
 </table>
 <BR>
 <div class="details">Attributes:</div>
 <table width="100%" border=0 class="detailstable">
 <tr><td valign="top" width= "19%" class="fieldname">Column name</td><td valign="top" width= "14%" class="fieldname">Primary key</td><td valign="top" width= "19%" class="fieldname">Data type</td><td valign="top" width= "10%" class="fieldname">Not NULL</td><td valign="top" width= "38%" class="fieldname">Comment</td></tr>
-<tr><td valign="top" class="fielddata"><A HREF="attrd.html#order_id">order_id</A></td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
-<tr><td valign="top" class="fielddata"><A HREF="attrd.html#order_date">order_date</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATE</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
-<tr><td valign="top" class="fielddata"><A HREF="attrd.html#customer_id">customer_id</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#order_id">order_id</A></td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">訂單編號</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#order_date">order_date</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">訂單日期</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#customer_id">customer_id</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">客戶編號</td></tr>
 </table>
 <BR>
 <div class="details">Relationships:</div>
@@ -125,16 +132,17 @@ Inventory
 <div class="objectname">Entity: SalesOrderDetail</div>
 <table width="100%" border=0 class="detailstable">
 <tr><td valign="top" width= "200" class="fieldname">Primary key constraint name</td><td valign="top" class="fielddata">PK_SalesOrderDetail</td></tr>
-<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata">訂單明細</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Table options</td><td valign="top" class="fielddata"></td></tr>
 </table>
 <BR>
 <div class="details">Attributes:</div>
 <table width="100%" border=0 class="detailstable">
 <tr><td valign="top" width= "19%" class="fieldname">Column name</td><td valign="top" width= "14%" class="fieldname">Primary key</td><td valign="top" width= "19%" class="fieldname">Data type</td><td valign="top" width= "10%" class="fieldname">Not NULL</td><td valign="top" width= "38%" class="fieldname">Comment</td></tr>
-<tr><td valign="top" class="fielddata"><A HREF="attrd.html#order_id">order_id</A></td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
-<tr><td valign="top" class="fielddata"><A HREF="attrd.html#product_id">product_id</A></td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
-<tr><td valign="top" class="fielddata"><A HREF="attrd.html#quantity">quantity</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
-<tr><td valign="top" class="fielddata"><A HREF="attrd.html#price">price</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#order_id">order_id</A></td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">訂單編號</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#product_id">product_id</A></td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">產品編號</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#quantity">quantity</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">數是</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#price">price</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">單價</td></tr>
 </table>
 <BR>
 <div class="details">Relationships:</div>
