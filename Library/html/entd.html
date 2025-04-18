@@ -18,6 +18,10 @@ Library
 <li><a href="entl.html">Entities</a></li>
 <li><a href="attrl.html">Attributes</a></li>
 <li><a href="rell.html">Relationships</a></li>
+<li><a href="doml.html">Domains</a></li>
+<li><a href="viewl.html">Views</a></li>
+<li><a href="procl.html">Procedures</a></li>
+<li><a href="seql.html">Sequences</a></li>
 <li><a href="userdefinedpropertiesl.html">User defined properties</a></li>
 </ul>
 <div class="row">
@@ -32,14 +36,15 @@ Library
 <table width="100%" border=0 class="detailstable">
 <tr><td valign="top" width= "200" class="fieldname">Primary key constraint name</td><td valign="top" class="fielddata">PK_Author</td></tr>
 <tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Table options</td><td valign="top" class="fielddata"></td></tr>
 </table>
 <BR>
 <div class="details">Attributes:</div>
 <table width="100%" border=0 class="detailstable">
 <tr><td valign="top" width= "19%" class="fieldname">Column name</td><td valign="top" width= "14%" class="fieldname">Primary key</td><td valign="top" width= "19%" class="fieldname">Data type</td><td valign="top" width= "10%" class="fieldname">Not NULL</td><td valign="top" width= "38%" class="fieldname">Comment</td></tr>
 <tr><td valign="top" class="fielddata"><A HREF="attrd.html#author_id">author_id</A></td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
-<tr><td valign="top" class="fielddata"><A HREF="attrd.html#author_name">author_name</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(20)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
-<tr><td valign="top" class="fielddata"><A HREF="attrd.html#email">email</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#author_name">author_name</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">VARCHAR(20)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#email">email</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">VARCHAR(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
 </table>
 <BR>
 <div class="details">Relationships:</div>
@@ -61,16 +66,17 @@ Library
 <div class="objectname">Entity: Book</div>
 <table width="100%" border=0 class="detailstable">
 <tr><td valign="top" width= "200" class="fieldname">Primary key constraint name</td><td valign="top" class="fielddata">PK_Book</td></tr>
-<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata">書籍資料</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Table options</td><td valign="top" class="fielddata"></td></tr>
 </table>
 <BR>
 <div class="details">Attributes:</div>
 <table width="100%" border=0 class="detailstable">
 <tr><td valign="top" width= "19%" class="fieldname">Column name</td><td valign="top" width= "14%" class="fieldname">Primary key</td><td valign="top" width= "19%" class="fieldname">Data type</td><td valign="top" width= "10%" class="fieldname">Not NULL</td><td valign="top" width= "38%" class="fieldname">Comment</td></tr>
 <tr><td valign="top" class="fielddata"><A HREF="attrd.html#book_id">book_id</A></td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
-<tr><td valign="top" class="fielddata"><A HREF="attrd.html#book_name">book_name</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(20)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
-<tr><td valign="top" class="fielddata"><A HREF="attrd.html#ISBN">ISBN</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(13)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
-<tr><td valign="top" class="fielddata"><A HREF="attrd.html#descriptions">descriptions</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(100)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#book_name">book_name</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">VARCHAR(20)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#ISBN">ISBN</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">VARCHAR(13)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#descriptions">descriptions</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">VARCHAR(100)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
 <tr><td valign="top" class="fielddata"><A HREF="attrd.html#publisher_id">publisher_id</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
 </table>
 <BR>
@@ -98,6 +104,7 @@ Library
 <table width="100%" border=0 class="detailstable">
 <tr><td valign="top" width= "200" class="fieldname">Primary key constraint name</td><td valign="top" class="fielddata">PK_BookingRoom</td></tr>
 <tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Table options</td><td valign="top" class="fielddata"></td></tr>
 </table>
 <BR>
 <div class="details">Attributes:</div>
@@ -106,10 +113,10 @@ Library
 <tr><td valign="top" class="fielddata"><A HREF="attrd.html#booking_id">booking_id</A></td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
 <tr><td valign="top" class="fielddata"><A HREF="attrd.html#member_id">member_id</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
 <tr><td valign="top" class="fielddata"><A HREF="attrd.html#room_id">room_id</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
-<tr><td valign="top" class="fielddata"><A HREF="attrd.html#apply_date">apply_date</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATE</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
-<tr><td valign="top" class="fielddata"><A HREF="attrd.html#booking_date">booking_date</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATE</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
-<tr><td valign="top" class="fielddata"><A HREF="attrd.html#booking_stime">booking_stime</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TIME</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
-<tr><td valign="top" class="fielddata"><A HREF="attrd.html#booking_etime">booking_etime</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TIME</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#apply_date">apply_date</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#booking_date">booking_date</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#booking_stime">booking_stime</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#booking_etime">booking_etime</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
 </table>
 <BR>
 <div class="details">Relationships:</div>
@@ -136,7 +143,8 @@ Library
 <div class="objectname">Entity: BookStock</div>
 <table width="100%" border=0 class="detailstable">
 <tr><td valign="top" width= "200" class="fieldname">Primary key constraint name</td><td valign="top" class="fielddata">PK_BookStock</td></tr>
-<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata">庫藏書</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Table options</td><td valign="top" class="fielddata"></td></tr>
 </table>
 <BR>
 <div class="details">Attributes:</div>
@@ -169,6 +177,7 @@ Library
 <table width="100%" border=0 class="detailstable">
 <tr><td valign="top" width= "200" class="fieldname">Primary key constraint name</td><td valign="top" class="fielddata">PK_Book_Author</td></tr>
 <tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Table options</td><td valign="top" class="fielddata"></td></tr>
 </table>
 <BR>
 <div class="details">Attributes:</div>
@@ -202,6 +211,7 @@ Library
 <table width="100%" border=0 class="detailstable">
 <tr><td valign="top" width= "200" class="fieldname">Primary key constraint name</td><td valign="top" class="fielddata">PK_BorrowDetail</td></tr>
 <tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Table options</td><td valign="top" class="fielddata"></td></tr>
 </table>
 <BR>
 <div class="details">Attributes:</div>
@@ -209,7 +219,7 @@ Library
 <tr><td valign="top" width= "19%" class="fieldname">Column name</td><td valign="top" width= "14%" class="fieldname">Primary key</td><td valign="top" width= "19%" class="fieldname">Data type</td><td valign="top" width= "10%" class="fieldname">Not NULL</td><td valign="top" width= "38%" class="fieldname">Comment</td></tr>
 <tr><td valign="top" class="fielddata"><A HREF="attrd.html#borrow_id">borrow_id</A></td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
 <tr><td valign="top" class="fielddata"><A HREF="attrd.html#stock_id">stock_id</A></td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
-<tr><td valign="top" class="fielddata"><A HREF="attrd.html#return_date">return_date</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATE</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#return_date">return_date</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
 </table>
 <BR>
 <div class="details">Relationships:</div>
@@ -236,13 +246,14 @@ Library
 <table width="100%" border=0 class="detailstable">
 <tr><td valign="top" width= "200" class="fieldname">Primary key constraint name</td><td valign="top" class="fielddata">PK_BorrowRecord</td></tr>
 <tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Table options</td><td valign="top" class="fielddata"></td></tr>
 </table>
 <BR>
 <div class="details">Attributes:</div>
 <table width="100%" border=0 class="detailstable">
 <tr><td valign="top" width= "19%" class="fieldname">Column name</td><td valign="top" width= "14%" class="fieldname">Primary key</td><td valign="top" width= "19%" class="fieldname">Data type</td><td valign="top" width= "10%" class="fieldname">Not NULL</td><td valign="top" width= "38%" class="fieldname">Comment</td></tr>
 <tr><td valign="top" class="fielddata"><A HREF="attrd.html#borrow_id">borrow_id</A></td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
-<tr><td valign="top" class="fielddata"><A HREF="attrd.html#borrow_date">borrow_date</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATE</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#borrow_date">borrow_date</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
 <tr><td valign="top" class="fielddata"><A HREF="attrd.html#member_id">member_id</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
 </table>
 <BR>
@@ -269,13 +280,14 @@ Library
 <table width="100%" border=0 class="detailstable">
 <tr><td valign="top" width= "200" class="fieldname">Primary key constraint name</td><td valign="top" class="fielddata">PK_MeetingRoom</td></tr>
 <tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Table options</td><td valign="top" class="fielddata"></td></tr>
 </table>
 <BR>
 <div class="details">Attributes:</div>
 <table width="100%" border=0 class="detailstable">
 <tr><td valign="top" width= "19%" class="fieldname">Column name</td><td valign="top" width= "14%" class="fieldname">Primary key</td><td valign="top" width= "19%" class="fieldname">Data type</td><td valign="top" width= "10%" class="fieldname">Not NULL</td><td valign="top" width= "38%" class="fieldname">Comment</td></tr>
 <tr><td valign="top" class="fielddata"><A HREF="attrd.html#room_id">room_id</A></td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
-<tr><td valign="top" class="fielddata"><A HREF="attrd.html#room_name">room_name</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(20)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#room_name">room_name</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">VARCHAR(20)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
 <tr><td valign="top" class="fielddata"><A HREF="attrd.html#capacity">capacity</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TINYINT</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
 </table>
 <BR>
@@ -298,18 +310,19 @@ Library
 <div class="objectname">Entity: Member</div>
 <table width="100%" border=0 class="detailstable">
 <tr><td valign="top" width= "200" class="fieldname">Primary key constraint name</td><td valign="top" class="fielddata">PK_Member</td></tr>
-<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata">會員基本資料</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Table options</td><td valign="top" class="fielddata"></td></tr>
 </table>
 <BR>
 <div class="details">Attributes:</div>
 <table width="100%" border=0 class="detailstable">
 <tr><td valign="top" width= "19%" class="fieldname">Column name</td><td valign="top" width= "14%" class="fieldname">Primary key</td><td valign="top" width= "19%" class="fieldname">Data type</td><td valign="top" width= "10%" class="fieldname">Not NULL</td><td valign="top" width= "38%" class="fieldname">Comment</td></tr>
-<tr><td valign="top" class="fielddata"><A HREF="attrd.html#member_id">member_id</A></td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
-<tr><td valign="top" class="fielddata"><A HREF="attrd.html#member_name">member_name</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(20)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
-<tr><td valign="top" class="fielddata"><A HREF="attrd.html#address">address</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(100)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
-<tr><td valign="top" class="fielddata"><A HREF="attrd.html#email">email</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(20)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
-<tr><td valign="top" class="fielddata"><A HREF="attrd.html#entrance_date">entrance_date</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATE</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
-<tr><td valign="top" class="fielddata"><A HREF="attrd.html#is_payed_anual_fee">is_payed_anual_fee</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">YESNO</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#member_id">member_id</A></td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">會員編號</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#member_name">member_name</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">VARCHAR(20)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">會員姓名</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#address">address</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">VARCHAR(100)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">地址</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#email">email</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">VARCHAR(20)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">電子郵件信箱</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#entrance_date">entrance_date</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">入會日期</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#is_payed_anual_fee">is_payed_anual_fee</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">BIT</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">已繳交年費</td></tr>
 </table>
 <BR>
 <div class="details">Relationships:</div>
@@ -334,6 +347,7 @@ Library
 <table width="100%" border=0 class="detailstable">
 <tr><td valign="top" width= "200" class="fieldname">Primary key constraint name</td><td valign="top" class="fielddata">PK_PreBorrowDetail</td></tr>
 <tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Table options</td><td valign="top" class="fielddata"></td></tr>
 </table>
 <BR>
 <div class="details">Attributes:</div>
@@ -341,7 +355,7 @@ Library
 <tr><td valign="top" width= "19%" class="fieldname">Column name</td><td valign="top" width= "14%" class="fieldname">Primary key</td><td valign="top" width= "19%" class="fieldname">Data type</td><td valign="top" width= "10%" class="fieldname">Not NULL</td><td valign="top" width= "38%" class="fieldname">Comment</td></tr>
 <tr><td valign="top" class="fielddata"><A HREF="attrd.html#pre_borrow_id">pre_borrow_id</A></td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
 <tr><td valign="top" class="fielddata"><A HREF="attrd.html#stock_id">stock_id</A></td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
-<tr><td valign="top" class="fielddata"><A HREF="attrd.html#is_borrowed">is_borrowed</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">YESNO</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#is_borrowed">is_borrowed</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">BIT</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
 </table>
 <BR>
 <div class="details">Relationships:</div>
@@ -368,13 +382,14 @@ Library
 <table width="100%" border=0 class="detailstable">
 <tr><td valign="top" width= "200" class="fieldname">Primary key constraint name</td><td valign="top" class="fielddata">PK_PreBorrowRecord</td></tr>
 <tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Table options</td><td valign="top" class="fielddata"></td></tr>
 </table>
 <BR>
 <div class="details">Attributes:</div>
 <table width="100%" border=0 class="detailstable">
 <tr><td valign="top" width= "19%" class="fieldname">Column name</td><td valign="top" width= "14%" class="fieldname">Primary key</td><td valign="top" width= "19%" class="fieldname">Data type</td><td valign="top" width= "10%" class="fieldname">Not NULL</td><td valign="top" width= "38%" class="fieldname">Comment</td></tr>
 <tr><td valign="top" class="fielddata"><A HREF="attrd.html#pre_borrow_id">pre_borrow_id</A></td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
-<tr><td valign="top" class="fielddata"><A HREF="attrd.html#pre_borrow_date">pre_borrow_date</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATE</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#pre_borrow_date">pre_borrow_date</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
 <tr><td valign="top" class="fielddata"><A HREF="attrd.html#member_id">member_id</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
 </table>
 <BR>
@@ -401,16 +416,17 @@ Library
 <table width="100%" border=0 class="detailstable">
 <tr><td valign="top" width= "200" class="fieldname">Primary key constraint name</td><td valign="top" class="fielddata">PK_Publisher</td></tr>
 <tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Table options</td><td valign="top" class="fielddata"></td></tr>
 </table>
 <BR>
 <div class="details">Attributes:</div>
 <table width="100%" border=0 class="detailstable">
 <tr><td valign="top" width= "19%" class="fieldname">Column name</td><td valign="top" width= "14%" class="fieldname">Primary key</td><td valign="top" width= "19%" class="fieldname">Data type</td><td valign="top" width= "10%" class="fieldname">Not NULL</td><td valign="top" width= "38%" class="fieldname">Comment</td></tr>
 <tr><td valign="top" class="fielddata"><A HREF="attrd.html#publisher_id">publisher_id</A></td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
-<tr><td valign="top" class="fielddata"><A HREF="attrd.html#publisher_name">publisher_name</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(20)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
-<tr><td valign="top" class="fielddata"><A HREF="attrd.html#address">address</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(100)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
-<tr><td valign="top" class="fielddata"><A HREF="attrd.html#phone">phone</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(20)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
-<tr><td valign="top" class="fielddata"><A HREF="attrd.html#contact_name">contact_name</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(20)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#publisher_name">publisher_name</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">VARCHAR(20)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#address">address</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">VARCHAR(100)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#phone">phone</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">VARCHAR(20)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#contact_name">contact_name</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">VARCHAR(20)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
 </table>
 <BR>
 <div class="details">Relationships:</div>
