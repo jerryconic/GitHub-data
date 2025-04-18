@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html";>
+<meta name="keywords" content=" - HTML Report">
+<meta name="author" content="Datanamic - www.datanamic.com">
+<title>New project</title>
+<link rel="stylesheet" type="text/css" media="screen,print" href="dbautodoc.css" title="report">
+</head>
+<body bgcolor="#FFFFFF" leftmargin="20" topmargin="10" marginwidth="20" marginheight="10">
+<div class="top">
+New project
+<BR>This report has been generated with the trial version of DeZign for Databases
+</div>
+<ul id="menu">
+<li><a href="index.html">Project details</a></li>
+<li><a href="erdiagram.html">Diagrams</a></li>
+<li><a href="entl.html">Entities</a></li>
+<li><a href="attrl.html">Attributes</a></li>
+<li><a href="rell.html">Relationships</a></li>
+<li><a href="doml.html">Domains</a></li>
+<li><a href="viewl.html">Views</a></li>
+<li><a href="procl.html">Procedures</a></li>
+<li><a href="seql.html">Sequences</a></li>
+<li><a href="userdefinedpropertiesl.html">User defined properties</a></li>
+</ul>
+<div class="row">
+<div class="tab"><a href="procl.html">List of procedures</a></div>
+<div class="activetab">Procedure details</div>
+</div>
+<table width=90% border=0 cellSpacing=0 cellPadding=0 class="chapter">
+<tr>
+<td class="right" valign=top>
+<A NAME="CustOrderHist"></A>
+<div class="objectname">Procedure: CustOrderHist</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">CustOrderHist</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Code</td><td valign="top" class="fielddata">CREATE PROCEDURE [dbo].[CustOrderHist] @CustomerID nchar(5)<BR>AS<BR>SELECT ProductName,  Total=SUM(Quantity)<BR>FROM Products P,  [Order Details] OD,  Orders O,  Customers C<BR>WHERE C.CustomerID = @CustomerID<BR>AND C.CustomerID = O.CustomerID AND O.OrderID = OD.OrderID AND OD.ProductID = P.ProductID<BR>GROUP BY ProductName<BR></td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="CustOrdersDetail"></A>
+<div class="objectname">Procedure: CustOrdersDetail</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">CustOrdersDetail</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Code</td><td valign="top" class="fielddata">CREATE PROCEDURE [dbo].[CustOrdersDetail] @OrderID int<BR>AS<BR>SELECT ProductName, <BR>&nbsp;&nbsp;&nbsp;&nbsp;UnitPrice=ROUND(Od.UnitPrice,  2), <BR>&nbsp;&nbsp;&nbsp;&nbsp;Quantity, <BR>&nbsp;&nbsp;&nbsp;&nbsp;Discount=CONVERT(int,  Discount * 100), <BR>&nbsp;&nbsp;&nbsp;&nbsp;ExtendedPrice=ROUND(CONVERT(money,  Quantity * (1 - Discount) * Od.UnitPrice),  2)<BR>FROM Products P,  [Order Details] Od<BR>WHERE Od.ProductID = P.ProductID and Od.OrderID = @OrderID<BR></td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="CustOrdersOrders"></A>
+<div class="objectname">Procedure: CustOrdersOrders</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">CustOrdersOrders</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Code</td><td valign="top" class="fielddata">CREATE PROCEDURE [dbo].[CustOrdersOrders] @CustomerID nchar(5)<BR>AS<BR>SELECT OrderID, <BR>	OrderDate, <BR>	RequiredDate, <BR>	ShippedDate<BR>FROM Orders<BR>WHERE CustomerID = @CustomerID<BR>ORDER BY OrderID<BR></td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="Employee Sales by Country"></A>
+<div class="objectname">Procedure: Employee Sales by Country</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">Employee Sales by Country</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Code</td><td valign="top" class="fielddata">create procedure "Employee Sales by Country"<BR>@Beginning_Date DateTime,  @Ending_Date DateTime AS<BR>SELECT Employees.Country,  Employees.LastName,  Employees.FirstName,  Orders.ShippedDate,  Orders.OrderID,  "Order Subtotals".Subtotal AS SaleAmount<BR>FROM Employees INNER JOIN<BR>	(Orders INNER JOIN "Order Subtotals" ON Orders.OrderID = "Order Subtotals".OrderID)<BR>	ON Employees.EmployeeID = Orders.EmployeeID<BR>WHERE Orders.ShippedDate Between @Beginning_Date And @Ending_Date<BR></td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="Sales by Year"></A>
+<div class="objectname">Procedure: Sales by Year</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">Sales by Year</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Code</td><td valign="top" class="fielddata">create procedure "Sales by Year"<BR>	@Beginning_Date DateTime,  @Ending_Date DateTime AS<BR>SELECT Orders.ShippedDate,  Orders.OrderID,  "Order Subtotals".Subtotal,  DATENAME(yy, ShippedDate) AS Year<BR>FROM Orders INNER JOIN "Order Subtotals" ON Orders.OrderID = "Order Subtotals".OrderID<BR>WHERE Orders.ShippedDate Between @Beginning_Date And @Ending_Date<BR></td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="SalesByCategory"></A>
+<div class="objectname">Procedure: SalesByCategory</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">SalesByCategory</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Code</td><td valign="top" class="fielddata">CREATE PROCEDURE [dbo].[SalesByCategory]<BR>&nbsp;&nbsp;&nbsp;&nbsp;@CategoryName nvarchar(15),  @OrdYear nvarchar(4) = '1998'<BR>AS<BR>IF @OrdYear != '1996' AND @OrdYear != '1997' AND @OrdYear != '1998'<BR>BEGIN<BR>	SELECT @OrdYear = '1998'<BR>END<BR><BR>SELECT ProductName, <BR>	TotalPurchase=ROUND(SUM(CONVERT(decimal(14, 2),  OD.Quantity * (1-OD.Discount) * OD.UnitPrice)),  0)<BR>FROM [Order Details] OD,  Orders O,  Products P,  Categories C<BR>WHERE OD.OrderID = O.OrderID<BR>	AND OD.ProductID = P.ProductID<BR>	AND P.CategoryID = C.CategoryID<BR>	AND C.CategoryName = @CategoryName<BR>	AND SUBSTRING(CONVERT(nvarchar(22),  O.OrderDate,  111),  1,  4) = @OrdYear<BR>GROUP BY ProductName<BR>ORDER BY ProductName<BR></td></tr>
+</table>
+<BR>
+<BR>
+<A NAME="Ten Most Expensive Products"></A>
+<div class="objectname">Procedure: Ten Most Expensive Products</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Name</td><td valign="top" class="fielddata">Ten Most Expensive Products</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Code</td><td valign="top" class="fielddata">create procedure "Ten Most Expensive Products" AS<BR>SET ROWCOUNT 10<BR>SELECT Products.ProductName AS TenMostExpensiveProducts,  Products.UnitPrice<BR>FROM Products<BR>ORDER BY Products.UnitPrice DESC<BR></td></tr>
+</table>
+<BR>
+<BR>
+</td>
+</tr>
+</table>
+</body>
+</html>

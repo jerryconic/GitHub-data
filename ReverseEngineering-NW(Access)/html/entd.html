@@ -1,0 +1,443 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html";>
+<meta name="keywords" content=" - HTML Report">
+<meta name="author" content="Datanamic - www.datanamic.com">
+<title>NW</title>
+<link rel="stylesheet" type="text/css" media="screen,print" href="dbautodoc.css" title="report">
+</head>
+<body bgcolor="#FFFFFF" leftmargin="20" topmargin="10" marginwidth="20" marginheight="10">
+<div class="top">
+NW
+<BR>This report has been generated with the trial version of DeZign for Databases
+</div>
+<ul id="menu">
+<li><a href="index.html">Project details</a></li>
+<li><a href="erdiagram.html">Diagrams</a></li>
+<li><a href="entl.html">Entities</a></li>
+<li><a href="attrl.html">Attributes</a></li>
+<li><a href="rell.html">Relationships</a></li>
+<li><a href="userdefinedpropertiesl.html">User defined properties</a></li>
+</ul>
+<div class="row">
+<div class="tab"><a href="entl.html">List of entities</a></div>
+<div class="activetab">Entity details</div>
+</div>
+<table width=90% border=0 cellSpacing=0 cellPadding=0 class="chapter">
+<tr>
+<td class="right" valign=top>
+<A NAME="Categories"></A>
+<div class="objectname">Entity: Categories</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Primary key constraint name</td><td valign="top" class="fielddata">PrimaryKey</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "19%" class="fieldname">Column name</td><td valign="top" width= "14%" class="fieldname">Primary key</td><td valign="top" width= "19%" class="fieldname">Data type</td><td valign="top" width= "10%" class="fieldname">Not NULL</td><td valign="top" width= "38%" class="fieldname">Comment</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#CategoryID">CategoryID</A></td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#CategoryName">CategoryName</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#Description">Description</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#Picture">Picture</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">IMAGE</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<div class="details">Relationships:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "24%" class="fieldname">Name</td><td valign="top" width= "20%" class="fieldname">Relationship type</td><td valign="top" width= "16%" class="fieldname">Parent</td><td valign="top" width= "16%" class="fieldname">Child</td><td valign="top" width= "24%" class="fieldname">Cardinality</td></tr>
+<tr><td valign="top" class="fielddata">Categories_Products</td><td valign="top" class="fielddata">Non Identifying</td><td valign="top" class="fielddata">Categories</td><td valign="top" class="fielddata">Products</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+</table>
+<BR>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "29%" class="fieldname">Name</td><td valign="top" width= "19%" class="fieldname">Type</td><td valign="top" width= "19%" class="fieldname">Level</td><td valign="top" width= "33%" class="fieldname">Constraint</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (CategoryName)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (CategoryID)</td></tr>
+<tr><td valign="top" class="fielddata">PrimaryKey</td><td valign="top" class="fielddata">Primary Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">PRIMARY KEY (CategoryID)</td></tr>
+</table>
+<BR>
+<BR>
+<BR>
+<A NAME="Customers"></A>
+<div class="objectname">Entity: Customers</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Primary key constraint name</td><td valign="top" class="fielddata">PrimaryKey</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "19%" class="fieldname">Column name</td><td valign="top" width= "14%" class="fieldname">Primary key</td><td valign="top" width= "19%" class="fieldname">Data type</td><td valign="top" width= "10%" class="fieldname">Not NULL</td><td valign="top" width= "38%" class="fieldname">Comment</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#CustomerID">CustomerID</A></td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">TEXT(5)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#CompanyName">CompanyName</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#ContactName">ContactName</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#ContactTitle">ContactTitle</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#Address">Address</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#City">City</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#Region">Region</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#PostalCode">PostalCode</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#Country">Country</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#Phone">Phone</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#Fax">Fax</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<div class="details">Relationships:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "24%" class="fieldname">Name</td><td valign="top" width= "20%" class="fieldname">Relationship type</td><td valign="top" width= "16%" class="fieldname">Parent</td><td valign="top" width= "16%" class="fieldname">Child</td><td valign="top" width= "24%" class="fieldname">Cardinality</td></tr>
+<tr><td valign="top" class="fielddata">Customers_Orders</td><td valign="top" class="fielddata">Non Identifying</td><td valign="top" class="fielddata">Customers</td><td valign="top" class="fielddata">Orders</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+</table>
+<BR>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "29%" class="fieldname">Name</td><td valign="top" width= "19%" class="fieldname">Type</td><td valign="top" width= "19%" class="fieldname">Level</td><td valign="top" width= "33%" class="fieldname">Constraint</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (CompanyName)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (CustomerID)</td></tr>
+<tr><td valign="top" class="fielddata">PrimaryKey</td><td valign="top" class="fielddata">Primary Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">PRIMARY KEY (CustomerID)</td></tr>
+</table>
+<BR>
+<BR>
+<BR>
+<A NAME="Employees"></A>
+<div class="objectname">Entity: Employees</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Primary key constraint name</td><td valign="top" class="fielddata">PrimaryKey</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "19%" class="fieldname">Column name</td><td valign="top" width= "14%" class="fieldname">Primary key</td><td valign="top" width= "19%" class="fieldname">Data type</td><td valign="top" width= "10%" class="fieldname">Not NULL</td><td valign="top" width= "38%" class="fieldname">Comment</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#EmployeeID">EmployeeID</A></td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#LastName">LastName</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#FirstName">FirstName</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#Title">Title</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#TitleOfCourtesy">TitleOfCourtesy</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#BirthDate">BirthDate</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#HireDate">HireDate</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#Address">Address</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#City">City</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#Region">Region</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#PostalCode">PostalCode</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#Country">[TRIAL limitation]</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#HomePhone">[TRIAL limitation]</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#Extension">[TRIAL limitation]</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#Photo">[TRIAL limitation]</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">IMAGE</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#Notes">[TRIAL limitation]</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#ReportsTo">[TRIAL limitation]</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#PhotoPath">[TRIAL limitation]</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<div class="details">Relationships:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "24%" class="fieldname">Name</td><td valign="top" width= "20%" class="fieldname">Relationship type</td><td valign="top" width= "16%" class="fieldname">Parent</td><td valign="top" width= "16%" class="fieldname">Child</td><td valign="top" width= "24%" class="fieldname">Cardinality</td></tr>
+<tr><td valign="top" class="fielddata">Employees_EmployeeTerritories</td><td valign="top" class="fielddata">Identifying</td><td valign="top" class="fielddata">Employees</td><td valign="top" class="fielddata">EmployeeTerritories</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" class="fielddata">Employees_Orders</td><td valign="top" class="fielddata">Non Identifying</td><td valign="top" class="fielddata">Employees</td><td valign="top" class="fielddata">Orders</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+</table>
+<BR>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "29%" class="fieldname">Name</td><td valign="top" width= "19%" class="fieldname">Type</td><td valign="top" width= "19%" class="fieldname">Level</td><td valign="top" width= "33%" class="fieldname">Constraint</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (FirstName)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (EmployeeID)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (LastName)</td></tr>
+<tr><td valign="top" class="fielddata">PrimaryKey</td><td valign="top" class="fielddata">Primary Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">PRIMARY KEY (EmployeeID)</td></tr>
+</table>
+<BR>
+<BR>
+<BR>
+<A NAME="EmployeeTerritories"></A>
+<div class="objectname">Entity: EmployeeTerritories</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Primary key constraint name</td><td valign="top" class="fielddata">PrimaryKey</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "19%" class="fieldname">Column name</td><td valign="top" width= "14%" class="fieldname">Primary key</td><td valign="top" width= "19%" class="fieldname">Data type</td><td valign="top" width= "10%" class="fieldname">Not NULL</td><td valign="top" width= "38%" class="fieldname">Comment</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#EmployeeID">EmployeeID</A></td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#TerritoryID">TerritoryID</A></td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<div class="details">Relationships:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "24%" class="fieldname">Name</td><td valign="top" width= "20%" class="fieldname">Relationship type</td><td valign="top" width= "16%" class="fieldname">Parent</td><td valign="top" width= "16%" class="fieldname">Child</td><td valign="top" width= "24%" class="fieldname">Cardinality</td></tr>
+<tr><td valign="top" class="fielddata">Employees_EmployeeTerritories</td><td valign="top" class="fielddata">Identifying</td><td valign="top" class="fielddata">Employees</td><td valign="top" class="fielddata">EmployeeTerritories</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" class="fielddata">Territories_EmployeeTerritories</td><td valign="top" class="fielddata">Identifying</td><td valign="top" class="fielddata">Territories</td><td valign="top" class="fielddata">EmployeeTerritories</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+</table>
+<BR>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "29%" class="fieldname">Name</td><td valign="top" width= "19%" class="fieldname">Type</td><td valign="top" width= "19%" class="fieldname">Level</td><td valign="top" width= "33%" class="fieldname">Constraint</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (TerritoryID)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (EmployeeID)</td></tr>
+<tr><td valign="top" class="fielddata">Employees_EmployeeTerritories</td><td valign="top" class="fielddata">Foreign Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">FOREIGN KEY (EmployeeID) REFERENCES Employees(EmployeeID)</td></tr>
+<tr><td valign="top" class="fielddata">PrimaryKey</td><td valign="top" class="fielddata">Primary Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">PRIMARY KEY (EmployeeID,  TerritoryID)</td></tr>
+<tr><td valign="top" class="fielddata">Territories_EmployeeTerritories</td><td valign="top" class="fielddata">Foreign Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">FOREIGN KEY (TerritoryID) REFERENCES Territories(TerritoryID)</td></tr>
+</table>
+<BR>
+<BR>
+<BR>
+<A NAME="Order Details"></A>
+<div class="objectname">Entity: Order Details</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Primary key constraint name</td><td valign="top" class="fielddata">PrimaryKey</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "19%" class="fieldname">Column name</td><td valign="top" width= "14%" class="fieldname">Primary key</td><td valign="top" width= "19%" class="fieldname">Data type</td><td valign="top" width= "10%" class="fieldname">Not NULL</td><td valign="top" width= "38%" class="fieldname">Comment</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#OrderID">OrderID</A></td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#ProductID">ProductID</A></td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#UnitPrice">UnitPrice</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">MONEY</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#Quantity">Quantity</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">SMALLINT</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#Discount">Discount</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">REAL</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<div class="details">Relationships:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "24%" class="fieldname">Name</td><td valign="top" width= "20%" class="fieldname">Relationship type</td><td valign="top" width= "16%" class="fieldname">Parent</td><td valign="top" width= "16%" class="fieldname">Child</td><td valign="top" width= "24%" class="fieldname">Cardinality</td></tr>
+<tr><td valign="top" class="fielddata">Orders_Order Details</td><td valign="top" class="fielddata">Identifying</td><td valign="top" class="fielddata">Orders</td><td valign="top" class="fielddata">Order Details</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" class="fielddata">Products_Order Details</td><td valign="top" class="fielddata">Identifying</td><td valign="top" class="fielddata">Products</td><td valign="top" class="fielddata">Order Details</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+</table>
+<BR>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "29%" class="fieldname">Name</td><td valign="top" width= "19%" class="fieldname">Type</td><td valign="top" width= "19%" class="fieldname">Level</td><td valign="top" width= "33%" class="fieldname">Constraint</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (Discount)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (OrderID)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (ProductID)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (UnitPrice)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (Quantity)</td></tr>
+<tr><td valign="top" class="fielddata">Orders_Order Details</td><td valign="top" class="fielddata">Foreign Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">FOREIGN KEY (OrderID) REFERENCES Orders(OrderID)</td></tr>
+<tr><td valign="top" class="fielddata">PrimaryKey</td><td valign="top" class="fielddata">Primary Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">PRIMARY KEY (OrderID,  ProductID)</td></tr>
+<tr><td valign="top" class="fielddata">Products_Order Details</td><td valign="top" class="fielddata">Foreign Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">FOREIGN KEY (ProductID) REFERENCES Products(ProductID)</td></tr>
+</table>
+<BR>
+<BR>
+<BR>
+<A NAME="Orders"></A>
+<div class="objectname">Entity: Orders</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Primary key constraint name</td><td valign="top" class="fielddata">PrimaryKey</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "19%" class="fieldname">Column name</td><td valign="top" width= "14%" class="fieldname">Primary key</td><td valign="top" width= "19%" class="fieldname">Data type</td><td valign="top" width= "10%" class="fieldname">Not NULL</td><td valign="top" width= "38%" class="fieldname">Comment</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#OrderID">OrderID</A></td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#CustomerID">CustomerID</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(5)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#EmployeeID">EmployeeID</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#OrderDate">OrderDate</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#RequiredDate">RequiredDate</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#ShippedDate">ShippedDate</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">DATETIME</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#ShipVia">ShipVia</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#Freight">Freight</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">MONEY</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#ShipName">ShipName</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#ShipAddress">ShipAddress</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#ShipCity">ShipCity</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#ShipRegion">[TRIAL limitation]</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#ShipPostalCode">[TRIAL limitation]</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#ShipCountry">[TRIAL limitation]</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<div class="details">Relationships:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "24%" class="fieldname">Name</td><td valign="top" width= "20%" class="fieldname">Relationship type</td><td valign="top" width= "16%" class="fieldname">Parent</td><td valign="top" width= "16%" class="fieldname">Child</td><td valign="top" width= "24%" class="fieldname">Cardinality</td></tr>
+<tr><td valign="top" class="fielddata">Customers_Orders</td><td valign="top" class="fielddata">Non Identifying</td><td valign="top" class="fielddata">Customers</td><td valign="top" class="fielddata">Orders</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" class="fielddata">Employees_Orders</td><td valign="top" class="fielddata">Non Identifying</td><td valign="top" class="fielddata">Employees</td><td valign="top" class="fielddata">Orders</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" class="fielddata">Orders_Order Details</td><td valign="top" class="fielddata">Identifying</td><td valign="top" class="fielddata">Orders</td><td valign="top" class="fielddata">Order Details</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+</table>
+<BR>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "29%" class="fieldname">Name</td><td valign="top" width= "19%" class="fieldname">Type</td><td valign="top" width= "19%" class="fieldname">Level</td><td valign="top" width= "33%" class="fieldname">Constraint</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (OrderID)</td></tr>
+<tr><td valign="top" class="fielddata">Customers_Orders</td><td valign="top" class="fielddata">Foreign Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)</td></tr>
+<tr><td valign="top" class="fielddata">Employees_Orders</td><td valign="top" class="fielddata">Foreign Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">FOREIGN KEY (EmployeeID) REFERENCES Employees(EmployeeID)</td></tr>
+<tr><td valign="top" class="fielddata">PrimaryKey</td><td valign="top" class="fielddata">Primary Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">PRIMARY KEY (OrderID)</td></tr>
+</table>
+<BR>
+<BR>
+<BR>
+<A NAME="Products"></A>
+<div class="objectname">Entity: Products</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Primary key constraint name</td><td valign="top" class="fielddata">PrimaryKey</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "19%" class="fieldname">Column name</td><td valign="top" width= "14%" class="fieldname">Primary key</td><td valign="top" width= "19%" class="fieldname">Data type</td><td valign="top" width= "10%" class="fieldname">Not NULL</td><td valign="top" width= "38%" class="fieldname">Comment</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#ProductID">ProductID</A></td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#ProductName">ProductName</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#SupplierID">SupplierID</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#CategoryID">CategoryID</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#QuantityPerUnit">QuantityPerUnit</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#UnitPrice">UnitPrice</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">MONEY</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#UnitsInStock">UnitsInStock</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">SMALLINT</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#UnitsOnOrder">UnitsOnOrder</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">SMALLINT</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#ReorderLevel">ReorderLevel</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">SMALLINT</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#Discontinued">Discontinued</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">SMALLINT</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<div class="details">Relationships:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "24%" class="fieldname">Name</td><td valign="top" width= "20%" class="fieldname">Relationship type</td><td valign="top" width= "16%" class="fieldname">Parent</td><td valign="top" width= "16%" class="fieldname">Child</td><td valign="top" width= "24%" class="fieldname">Cardinality</td></tr>
+<tr><td valign="top" class="fielddata">Categories_Products</td><td valign="top" class="fielddata">Non Identifying</td><td valign="top" class="fielddata">Categories</td><td valign="top" class="fielddata">Products</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" class="fielddata">Products_Order Details</td><td valign="top" class="fielddata">Identifying</td><td valign="top" class="fielddata">Products</td><td valign="top" class="fielddata">Order Details</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" class="fielddata">Suppliers_Products</td><td valign="top" class="fielddata">Non Identifying</td><td valign="top" class="fielddata">Suppliers</td><td valign="top" class="fielddata">Products</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+</table>
+<BR>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "29%" class="fieldname">Name</td><td valign="top" width= "19%" class="fieldname">Type</td><td valign="top" width= "19%" class="fieldname">Level</td><td valign="top" width= "33%" class="fieldname">Constraint</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (Discontinued)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (ProductID)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (ProductName)</td></tr>
+<tr><td valign="top" class="fielddata">Categories_Products</td><td valign="top" class="fielddata">Foreign Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">FOREIGN KEY (CategoryID) REFERENCES Categories(CategoryID)</td></tr>
+<tr><td valign="top" class="fielddata">PrimaryKey</td><td valign="top" class="fielddata">Primary Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">PRIMARY KEY (ProductID)</td></tr>
+<tr><td valign="top" class="fielddata">Suppliers_Products</td><td valign="top" class="fielddata">Foreign Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">FOREIGN KEY (SupplierID) REFERENCES Suppliers(SupplierID)</td></tr>
+</table>
+<BR>
+<BR>
+<BR>
+<A NAME="Region"></A>
+<div class="objectname">Entity: Region</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Primary key constraint name</td><td valign="top" class="fielddata">PrimaryKey</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "19%" class="fieldname">Column name</td><td valign="top" width= "14%" class="fieldname">Primary key</td><td valign="top" width= "19%" class="fieldname">Data type</td><td valign="top" width= "10%" class="fieldname">Not NULL</td><td valign="top" width= "38%" class="fieldname">Comment</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#RegionID">RegionID</A></td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#RegionDescription">RegionDescription</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<div class="details">Relationships:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "24%" class="fieldname">Name</td><td valign="top" width= "20%" class="fieldname">Relationship type</td><td valign="top" width= "16%" class="fieldname">Parent</td><td valign="top" width= "16%" class="fieldname">Child</td><td valign="top" width= "24%" class="fieldname">Cardinality</td></tr>
+<tr><td valign="top" class="fielddata">Region_Territories</td><td valign="top" class="fielddata">Non Identifying</td><td valign="top" class="fielddata">Region</td><td valign="top" class="fielddata">Territories</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+</table>
+<BR>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "29%" class="fieldname">Name</td><td valign="top" width= "19%" class="fieldname">Type</td><td valign="top" width= "19%" class="fieldname">Level</td><td valign="top" width= "33%" class="fieldname">Constraint</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (RegionDescription)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (RegionID)</td></tr>
+<tr><td valign="top" class="fielddata">PrimaryKey</td><td valign="top" class="fielddata">Primary Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">PRIMARY KEY (RegionID)</td></tr>
+</table>
+<BR>
+<BR>
+<BR>
+<A NAME="Shippers"></A>
+<div class="objectname">Entity: Shippers</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Primary key constraint name</td><td valign="top" class="fielddata">PrimaryKey</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "19%" class="fieldname">Column name</td><td valign="top" width= "14%" class="fieldname">Primary key</td><td valign="top" width= "19%" class="fieldname">Data type</td><td valign="top" width= "10%" class="fieldname">Not NULL</td><td valign="top" width= "38%" class="fieldname">Comment</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#ShipperID">ShipperID</A></td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#CompanyName">CompanyName</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#Phone">Phone</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<BR>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "29%" class="fieldname">Name</td><td valign="top" width= "19%" class="fieldname">Type</td><td valign="top" width= "19%" class="fieldname">Level</td><td valign="top" width= "33%" class="fieldname">Constraint</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (CompanyName)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (ShipperID)</td></tr>
+<tr><td valign="top" class="fielddata">PrimaryKey</td><td valign="top" class="fielddata">Primary Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">PRIMARY KEY (ShipperID)</td></tr>
+</table>
+<BR>
+<BR>
+<BR>
+<A NAME="Suppliers"></A>
+<div class="objectname">Entity: Suppliers</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Primary key constraint name</td><td valign="top" class="fielddata">PrimaryKey</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "19%" class="fieldname">Column name</td><td valign="top" width= "14%" class="fieldname">Primary key</td><td valign="top" width= "19%" class="fieldname">Data type</td><td valign="top" width= "10%" class="fieldname">Not NULL</td><td valign="top" width= "38%" class="fieldname">Comment</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#SupplierID">SupplierID</A></td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#CompanyName">CompanyName</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#ContactName">ContactName</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#ContactTitle">ContactTitle</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#Address">Address</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#City">City</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#Region">Region</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#PostalCode">PostalCode</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#Country">Country</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#Phone">Phone</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#Fax">Fax</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#HomePage">[TRIAL limitation]</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<div class="details">Relationships:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "24%" class="fieldname">Name</td><td valign="top" width= "20%" class="fieldname">Relationship type</td><td valign="top" width= "16%" class="fieldname">Parent</td><td valign="top" width= "16%" class="fieldname">Child</td><td valign="top" width= "24%" class="fieldname">Cardinality</td></tr>
+<tr><td valign="top" class="fielddata">Suppliers_Products</td><td valign="top" class="fielddata">Non Identifying</td><td valign="top" class="fielddata">Suppliers</td><td valign="top" class="fielddata">Products</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+</table>
+<BR>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "29%" class="fieldname">Name</td><td valign="top" width= "19%" class="fieldname">Type</td><td valign="top" width= "19%" class="fieldname">Level</td><td valign="top" width= "33%" class="fieldname">Constraint</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (CompanyName)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (SupplierID)</td></tr>
+<tr><td valign="top" class="fielddata">PrimaryKey</td><td valign="top" class="fielddata">Primary Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">PRIMARY KEY (SupplierID)</td></tr>
+</table>
+<BR>
+<BR>
+<BR>
+<A NAME="Territories"></A>
+<div class="objectname">Entity: Territories</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "200" class="fieldname">Primary key constraint name</td><td valign="top" class="fielddata">PrimaryKey</td></tr>
+<tr><td valign="top" width= "200" class="fieldname">Comment</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<div class="details">Attributes:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "19%" class="fieldname">Column name</td><td valign="top" width= "14%" class="fieldname">Primary key</td><td valign="top" width= "19%" class="fieldname">Data type</td><td valign="top" width= "10%" class="fieldname">Not NULL</td><td valign="top" width= "38%" class="fieldname">Comment</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#TerritoryID">TerritoryID</A></td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#TerritoryDescription">TerritoryDescription</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">TEXT(50)</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="attrd.html#RegionID">RegionID</A></td><td valign="top" class="fielddata">No</td><td valign="top" class="fielddata">INTEGER</td><td valign="top" class="fielddata">Yes</td><td valign="top" class="fielddata"></td></tr>
+</table>
+<BR>
+<div class="details">Relationships:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "24%" class="fieldname">Name</td><td valign="top" width= "20%" class="fieldname">Relationship type</td><td valign="top" width= "16%" class="fieldname">Parent</td><td valign="top" width= "16%" class="fieldname">Child</td><td valign="top" width= "24%" class="fieldname">Cardinality</td></tr>
+<tr><td valign="top" class="fielddata">Region_Territories</td><td valign="top" class="fielddata">Non Identifying</td><td valign="top" class="fielddata">Region</td><td valign="top" class="fielddata">Territories</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" class="fielddata">Territories_EmployeeTerritories</td><td valign="top" class="fielddata">Identifying</td><td valign="top" class="fielddata">Territories</td><td valign="top" class="fielddata">EmployeeTerritories</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+</table>
+<BR>
+<div class="details">Constraints:</div>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "29%" class="fieldname">Name</td><td valign="top" width= "19%" class="fieldname">Type</td><td valign="top" width= "19%" class="fieldname">Level</td><td valign="top" width= "33%" class="fieldname">Constraint</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (RegionID)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (TerritoryID)</td></tr>
+<tr><td valign="top" class="fielddata"></td><td valign="top" class="fielddata">Not Null</td><td valign="top" class="fielddata">Column Constraint</td><td valign="top" class="fielddata">NOT NULL (TerritoryDescription)</td></tr>
+<tr><td valign="top" class="fielddata">PrimaryKey</td><td valign="top" class="fielddata">Primary Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">PRIMARY KEY (TerritoryID)</td></tr>
+<tr><td valign="top" class="fielddata">Region_Territories</td><td valign="top" class="fielddata">Foreign Key</td><td valign="top" class="fielddata">Table Constraint</td><td valign="top" class="fielddata">FOREIGN KEY (RegionID) REFERENCES Region(RegionID)</td></tr>
+</table>
+<BR>
+<BR>
+<BR>
+</td>
+</tr>
+</table>
+</body>
+</html>

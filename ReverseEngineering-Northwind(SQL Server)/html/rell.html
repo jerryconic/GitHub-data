@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html";>
+<meta name="keywords" content=" - HTML Report">
+<meta name="author" content="Datanamic - www.datanamic.com">
+<title>New project</title>
+<link rel="stylesheet" type="text/css" media="screen,print" href="dbautodoc.css" title="report">
+</head>
+<body bgcolor="#FFFFFF" leftmargin="20" topmargin="10" marginwidth="20" marginheight="10">
+<div class="top">
+New project
+<BR>This report has been generated with the trial version of DeZign for Databases
+</div>
+<ul id="menu">
+<li><a href="index.html">Project details</a></li>
+<li><a href="erdiagram.html">Diagrams</a></li>
+<li><a href="entl.html">Entities</a></li>
+<li><a href="attrl.html">Attributes</a></li>
+<li><a href="rell.html">Relationships</a></li>
+<li><a href="doml.html">Domains</a></li>
+<li><a href="viewl.html">Views</a></li>
+<li><a href="procl.html">Procedures</a></li>
+<li><a href="seql.html">Sequences</a></li>
+<li><a href="userdefinedpropertiesl.html">User defined properties</a></li>
+</ul>
+<div class="row">
+<div class="activetab">List of relationships</div>
+<div class="tab"><a href="reld.html">Relationship details</a></div>
+</div>
+<table width=90% border=0 cellSpacing=0 cellPadding=0 class="chapter">
+<tr>
+<td class="right" valign=top>
+<table width="100%" border=0 class="detailstable">
+<tr><td valign="top" width= "24%" class="fieldname">Name</td><td valign="top" width= "20%" class="fieldname">Relationship type</td><td valign="top" width= "16%" class="fieldname">Parent</td><td valign="top" width= "16%" class="fieldname">Child</td><td valign="top" width= "24%" class="fieldname">Cardinality</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="reld.html#FK_CustomerCustomerDemo">FK_CustomerCustomerDemo</A></td><td valign="top" class="fielddata">Identifying</td><td valign="top" class="fielddata">CustomerDemographics</td><td valign="top" class="fielddata">CustomerCustomerDemo</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="reld.html#FK_CustomerCustomerDemo_Customers">FK_CustomerCustomerDemo_Customers</A></td><td valign="top" class="fielddata">Identifying</td><td valign="top" class="fielddata">Customers</td><td valign="top" class="fielddata">CustomerCustomerDemo</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="reld.html#FK_Employees_Employees">FK_Employees_Employees</A></td><td valign="top" class="fielddata">Non Identifying</td><td valign="top" class="fielddata">Employees</td><td valign="top" class="fielddata">Employees</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="reld.html#FK_EmployeeTerritories_Employees">FK_EmployeeTerritories_Employees</A></td><td valign="top" class="fielddata">Identifying</td><td valign="top" class="fielddata">Employees</td><td valign="top" class="fielddata">EmployeeTerritories</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="reld.html#FK_EmployeeTerritories_Territories">FK_EmployeeTerritories_Territories</A></td><td valign="top" class="fielddata">Identifying</td><td valign="top" class="fielddata">Territories</td><td valign="top" class="fielddata">EmployeeTerritories</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="reld.html#FK_Orders_Customers">FK_Orders_Customers</A></td><td valign="top" class="fielddata">Non Identifying</td><td valign="top" class="fielddata">Customers</td><td valign="top" class="fielddata">Orders</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="reld.html#FK_Orders_Employees">FK_Orders_Employees</A></td><td valign="top" class="fielddata">Non Identifying</td><td valign="top" class="fielddata">Employees</td><td valign="top" class="fielddata">Orders</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="reld.html#FK_Orders_Shippers">FK_Orders_Shippers</A></td><td valign="top" class="fielddata">Non Identifying</td><td valign="top" class="fielddata">Shippers</td><td valign="top" class="fielddata">Orders</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="reld.html#FK_Order_Details_Orders">FK_Order_Details_Orders</A></td><td valign="top" class="fielddata">Identifying</td><td valign="top" class="fielddata">Orders</td><td valign="top" class="fielddata">Order Details</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="reld.html#FK_Order_Details_Products">FK_Order_Details_Products</A></td><td valign="top" class="fielddata">Identifying</td><td valign="top" class="fielddata">Products</td><td valign="top" class="fielddata">Order Details</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="reld.html#FK_Products_Categories">FK_Products_Categories</A></td><td valign="top" class="fielddata">Non Identifying</td><td valign="top" class="fielddata">Categories</td><td valign="top" class="fielddata">Products</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="reld.html#FK_Products_Suppliers">FK_Products_Suppliers</A></td><td valign="top" class="fielddata">Non Identifying</td><td valign="top" class="fielddata">Suppliers</td><td valign="top" class="fielddata">Products</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+<tr><td valign="top" class="fielddata"><A HREF="reld.html#FK_Territories_Region">FK_Territories_Region</A></td><td valign="top" class="fielddata">Non Identifying</td><td valign="top" class="fielddata">Region</td><td valign="top" class="fielddata">Territories</td><td valign="top" class="fielddata">Zero Or More</td></tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>
